@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sonnetjs/sonnet.git"
+    "url": "git+https://github.com/sonnetjs/sonnet-dom.git"
   },
   "bugs": {
-    "url": "https://github.com/sonnetjs/sonnet/issues"
+    "url": "https://github.com/sonnetjs/sonnet-dom/issues"
   },
-  "homepage": "https://github.com/sonnetjs/sonnet/tree/main/packages/sonnet-dom#readme",
+  "homepage": "https://github.com/sonnetjs/sonnet-dom/tree/main/packages/sonnet-dom#readme",
   "tags": [
     "sonnet",
     "web-components",
