@@ -1,33 +1,55 @@
-# `Turborepo` Vite starter
+# SonnetJS DOM
 
-This is an official starter Turborepo.
+A frontend framework for building modern web applications. SonnetJS is a collection of packages and tools that help you build web applications with ease.
 
-## Using this example
+## Usage
 
-Run the following command:
+1. Run the following command to create a new SonnetJS project.
 
-```sh
-npx create-turbo@latest -e with-vite
+```bash
+npx create-sonnet-app@latest
 ```
 
-## What's inside?
+2. Change directory to the newly created project.
 
-This Turborepo includes the following packages and apps:
+```bash
+cd [my-sonnet-app]
+```
 
-### Apps and Packages
+3. Install the dependencies
 
-- `docs`: a vanilla [vite](https://vitejs.dev) ts app
-- `web`: another vanilla [vite](https://vitejs.dev) ts app
-- `@repo/ui`: a stub component & utility library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: shared `eslint` configurations
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+```bash
+npm i
+```
 
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
+4. Start the development server
 
-### Utilities
+```bash
+npm run dev
+```
 
-This Turborepo has some additional tools already setup for you:
+## Apps and Packages
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- `@sonnet/dom`: A library to enhance dom support inside sonnet.
+- `@sonnet/html`: A library to enhance html dom support inside sonnet.
+- `@sonnet/svg`: A library to enhance svg support inside sonnet.
+- `@sonnet/mathml`: A library to enhance mathml support inside sonnet.
+
+## NPM
+
+SonnetJS is available on NPM. You can install the core package by running:
+
+```bash
+npm i @sonnetjs/html
+```
+
+## NPM Links
+
+
+[https://npmjs.com/package/@sonnetjs/dom](https://npmjs.com/package/@sonnetjs/dom)
+
+[https://npmjs.com/package/@sonnetjs/html](https://npmjs.com/package/@sonnetjs/html)
+
+[https://npmjs.com/package/@sonnetjs/svg](https://npmjs.com/package/@sonnetjs/svg)
+
+[https://npmjs.com/package/@sonnetjs/mathml](https://npmjs.com/package/@sonnetjs/mathml)
