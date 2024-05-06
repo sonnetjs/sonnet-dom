@@ -1,7 +1,7 @@
-import { isServer } from '@sonnetjs/shared';
+import { isServer, SonnetGet } from '@sonnetjs/shared';
 
-import { serverParse } from '../parser';
 import CNode from './CNode';
+import { serverParse } from '../parser';
 
 export default class CElement<T> extends CNode {
   public declare el?: Element;
@@ -66,12 +66,12 @@ export default class CElement<T> extends CNode {
     return this;
   }
 
-  public children(...value: (Node | string)[]) {
+  public children(...value: SonnetGet[]) {
     if (this.el) {
       if (isServer()) {
         this.el.innerHTML = value.join('');
       } else {
-        this.el.append(...value);
+        this.el.append(...(value as Node[]));
       }
     }
     return this;
