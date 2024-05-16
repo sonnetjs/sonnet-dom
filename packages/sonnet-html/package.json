@@ -1,6 +1,6 @@
 {
   "name": "@sonnetjs/html",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "files": [
     "dist"
   ],
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@sonnetjs/dom": "*",
-    "@sonnetjs/shared": "0.0.1"
+    "@sonnetjs/shared": "0.0.4"
   },
   "publishConfig": {
     "access": "public"

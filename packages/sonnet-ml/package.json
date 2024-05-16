@@ -1,6 +1,6 @@
 {
   "name": "@sonnetjs/mathml",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "files": [
     "dist"
   ],
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@sonnetjs/dom": "*",
-    "@sonnetjs/shared": "0.0.1"
+    "@sonnetjs/shared": "0.0.4"
   },
   "publishConfig": {
     "access": "public"
