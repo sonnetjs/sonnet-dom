@@ -9,6 +9,7 @@ class CHTMLMapElement extends CHTMLElement<HTMLMapElement> {
     if (isServer()) {
       this.el = {
         tagName: 'map',
+        dataset: {},
       } as HTMLMapElement;
     } else {
       this.el = document.createElement('map');

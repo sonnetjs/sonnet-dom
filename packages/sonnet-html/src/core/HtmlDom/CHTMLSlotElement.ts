@@ -9,6 +9,7 @@ class CHTMLSlotElement extends CHTMLElement<HTMLSlotElement> {
     if (isServer()) {
       this.el = {
         tagName: 'slot',
+        dataset: {},
       } as HTMLSlotElement;
     } else {
       this.el = document.createElement('slot');

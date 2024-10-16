@@ -9,6 +9,7 @@ class CHTMLUListElement extends CHTMLElement<HTMLUListElement> {
     if (isServer()) {
       this.el = {
         tagName: 'ul',
+        dataset: {},
       } as HTMLUListElement;
     } else {
       this.el = document.createElement('ul');

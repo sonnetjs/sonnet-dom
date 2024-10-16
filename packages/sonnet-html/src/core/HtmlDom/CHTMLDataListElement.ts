@@ -9,6 +9,7 @@ class CHTMLDataListElement extends CHTMLElement<HTMLDataListElement> {
     if (isServer()) {
       this.el = {
         tagName: 'datalist',
+        dataset: {},
       } as HTMLDataListElement;
     } else {
       this.el = document.createElement('datalist');

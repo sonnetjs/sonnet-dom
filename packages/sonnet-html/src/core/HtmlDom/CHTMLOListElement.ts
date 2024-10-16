@@ -9,6 +9,7 @@ class CHTMLOListElement extends CHTMLElement<HTMLOListElement> {
     if (isServer()) {
       this.el = {
         tagName: 'ol',
+        dataset: {},
       } as HTMLOListElement;
     } else {
       this.el = document.createElement('ol');

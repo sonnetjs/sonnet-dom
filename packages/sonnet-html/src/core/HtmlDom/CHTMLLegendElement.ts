@@ -9,6 +9,7 @@ class CHTMLLegendElement extends CHTMLElement<HTMLLegendElement> {
     if (isServer()) {
       this.el = {
         tagName: 'legend',
+        dataset: {},
       } as HTMLLegendElement;
     } else {
       this.el = document.createElement('legend');

@@ -9,6 +9,7 @@ class CHTMLTemplateElement extends CHTMLElement<HTMLTemplateElement> {
     if (isServer()) {
       this.el = {
         tagName: 'template',
+        dataset: {},
       } as HTMLTemplateElement;
     } else {
       this.el = document.createElement('template');

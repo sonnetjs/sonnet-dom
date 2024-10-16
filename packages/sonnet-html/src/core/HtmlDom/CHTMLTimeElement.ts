@@ -9,6 +9,7 @@ class CHTMLTimeElement extends CHTMLElement<HTMLTimeElement> {
     if (isServer()) {
       this.el = {
         tagName: 'time',
+        dataset: {},
       } as HTMLTimeElement;
     } else {
       this.el = document.createElement('time');

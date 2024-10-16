@@ -9,6 +9,7 @@ class CHTMLMenuElement extends CHTMLElement<HTMLMenuElement> {
     if (isServer()) {
       this.el = {
         tagName: 'menu',
+        dataset: {},
       } as HTMLMenuElement;
     } else {
       this.el = document.createElement('menu');

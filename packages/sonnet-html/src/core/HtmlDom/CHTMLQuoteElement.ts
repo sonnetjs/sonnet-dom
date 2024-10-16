@@ -9,6 +9,7 @@ class CHTMLQuoteElement extends CHTMLElement<HTMLQuoteElement> {
     if (isServer()) {
       this.el = {
         tagName: tag,
+        dataset: {},
       } as HTMLQuoteElement;
     } else {
       this.el = document.createElement(tag);

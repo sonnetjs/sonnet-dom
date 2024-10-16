@@ -1,7 +1,7 @@
 import CHTMLElement from './CHTMLElement';
 
 export default class CHTMLMediaElement<T> extends CHTMLElement<T> {
-  declare public el: HTMLMediaElement;
+  public declare el: HTMLMediaElement;
 
   constructor() {
     super();

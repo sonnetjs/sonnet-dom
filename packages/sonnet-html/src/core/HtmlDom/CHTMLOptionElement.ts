@@ -9,6 +9,7 @@ class CHTMLOptionElement extends CHTMLElement<HTMLOptionElement> {
     if (isServer()) {
       this.el = {
         tagName: 'option',
+        dataset: {},
       } as HTMLOptionElement;
     } else {
       this.el = document.createElement('option');

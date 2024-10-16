@@ -12,7 +12,13 @@ export default class CElement<T> extends CNode {
 
   public setAttribute(name: string, value: string) {
     if (this.el) {
-      this.el.setAttribute(name, value);
+      if (isServer()) {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.el[name] = value;
+      } else {
+        this.el.setAttribute(name, value);
+      }
     }
     return this;
   }

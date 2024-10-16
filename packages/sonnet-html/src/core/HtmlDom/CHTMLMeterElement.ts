@@ -9,6 +9,7 @@ class CHTMLMeterElement extends CHTMLElement<HTMLMeterElement> {
     if (isServer()) {
       this.el = {
         tagName: 'meter',
+        dataset: {},
       } as HTMLMeterElement;
     } else {
       this.el = document.createElement('meter');

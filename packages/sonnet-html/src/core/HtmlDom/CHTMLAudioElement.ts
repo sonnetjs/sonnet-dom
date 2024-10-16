@@ -9,6 +9,7 @@ class CHTMLAudioElement extends CHTMLMediaElement<HTMLAudioElement> {
     if (isServer()) {
       this.el = {
         tagName: 'audio',
+        dataset: {},
       } as HTMLAudioElement;
     } else {
       this.el = document.createElement('audio');

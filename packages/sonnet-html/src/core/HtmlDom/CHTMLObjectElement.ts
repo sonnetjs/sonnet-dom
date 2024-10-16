@@ -9,6 +9,7 @@ class CHTMLObjectElement extends CHTMLElement<HTMLObjectElement> {
     if (isServer()) {
       this.el = {
         tagName: 'object',
+        dataset: {},
       } as HTMLObjectElement;
     } else {
       this.el = document.createElement('object');

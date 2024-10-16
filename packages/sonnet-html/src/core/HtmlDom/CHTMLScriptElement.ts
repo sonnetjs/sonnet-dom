@@ -9,6 +9,7 @@ class CHTMLScriptElement extends CHTMLElement<HTMLScriptElement> {
     if (isServer()) {
       this.el = {
         tagName: 'script',
+        dataset: {},
       } as HTMLScriptElement;
     } else {
       this.el = document.createElement('script');

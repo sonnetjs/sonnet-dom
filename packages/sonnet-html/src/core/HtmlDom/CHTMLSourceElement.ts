@@ -9,6 +9,7 @@ class CHTMLSourceElement extends CHTMLElement<HTMLSourceElement> {
     if (isServer()) {
       this.el = {
         tagName: 'source',
+        dataset: {},
       } as HTMLSourceElement;
     } else {
       this.el = document.createElement('source');

@@ -9,6 +9,7 @@ class CHTMLTitleElement extends CHTMLElement<HTMLTitleElement> {
     if (isServer()) {
       this.el = {
         tagName: 'title',
+        dataset: {},
       } as HTMLTitleElement;
     } else {
       this.el = document.createElement('title');

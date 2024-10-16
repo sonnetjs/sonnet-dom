@@ -9,6 +9,7 @@ class CHTMLButtonElement extends CHTMLElement<HTMLButtonElement> {
     if (isServer()) {
       this.el = {
         tagName: 'button',
+        dataset: {},
       } as HTMLButtonElement;
     } else {
       this.el = document.createElement('button');

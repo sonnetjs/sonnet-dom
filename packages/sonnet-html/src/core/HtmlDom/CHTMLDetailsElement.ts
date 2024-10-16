@@ -9,6 +9,7 @@ class CHTMLDetailsElement extends CHTMLElement<HTMLDetailsElement> {
     if (isServer()) {
       this.el = {
         tagName: 'details',
+        dataset: {},
       } as HTMLDetailsElement;
     } else {
       this.el = document.createElement('details');

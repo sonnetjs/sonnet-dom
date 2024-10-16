@@ -9,6 +9,7 @@ class CHTMLDivElement extends CHTMLElement<HTMLDivElement> {
     if (isServer()) {
       this.el = {
         tagName: 'div',
+        dataset: {},
       } as HTMLDivElement;
     } else {
       this.el = document.createElement('div');

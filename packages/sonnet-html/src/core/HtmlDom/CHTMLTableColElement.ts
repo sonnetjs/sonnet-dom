@@ -9,6 +9,7 @@ class CHTMLTableColElement extends CHTMLElement<HTMLTableColElement> {
     if (isServer()) {
       this.el = {
         tagName: tag,
+        dataset: {},
       } as HTMLTableColElement;
     } else {
       this.el = document.createElement(tag);

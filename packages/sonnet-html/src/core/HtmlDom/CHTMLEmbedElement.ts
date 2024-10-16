@@ -9,6 +9,7 @@ class CHTMLEmbedElement extends CHTMLElement<HTMLEmbedElement> {
     if (isServer()) {
       this.el = {
         tagName: 'embed',
+        dataset: {},
       } as HTMLEmbedElement;
     } else {
       this.el = document.createElement('embed');

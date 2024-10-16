@@ -9,6 +9,7 @@ class CHTMLOutputElement extends CHTMLElement<HTMLOutputElement> {
     if (isServer()) {
       this.el = {
         tagName: 'output',
+        dataset: {},
       } as HTMLOutputElement;
     } else {
       this.el = document.createElement('output');

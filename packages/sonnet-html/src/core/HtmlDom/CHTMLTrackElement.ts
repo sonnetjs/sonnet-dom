@@ -9,6 +9,7 @@ class CHTMLTrackElement extends CHTMLElement<HTMLTrackElement> {
     if (isServer()) {
       this.el = {
         tagName: 'track',
+        dataset: {},
       } as HTMLTrackElement;
     } else {
       this.el = document.createElement('track');

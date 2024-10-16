@@ -11,6 +11,7 @@ class CHTMLTableCaptionElement extends CHTMLElement<HTMLTableCaptionElement> {
     if (isServer()) {
       this.el = {
         tagName: tag,
+        dataset: {},
       } as HTMLTableCaptionElement;
     } else {
       this.el = document.createElement(tag);

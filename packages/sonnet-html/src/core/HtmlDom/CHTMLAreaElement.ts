@@ -9,6 +9,7 @@ class CHTMLAreaElement extends CHTMLElement<HTMLAreaElement> {
     if (isServer()) {
       this.el = {
         tagName: 'area',
+        dataset: {},
       } as HTMLAreaElement;
     } else {
       this.el = document.createElement('area');

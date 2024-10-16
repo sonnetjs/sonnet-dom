@@ -9,6 +9,7 @@ class CHTMLBRElement extends CHTMLElement<HTMLBRElement> {
     if (isServer()) {
       this.el = {
         tagName: 'br',
+        dataset: {},
       } as HTMLBRElement;
     } else {
       this.el = document.createElement('br');

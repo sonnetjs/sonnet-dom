@@ -10,6 +10,7 @@ export default class CHTMLElement<T> extends CElement<T> {
       if (isServer()) {
         this.el = {
           tagName: tag,
+          dataset: {},
         } as HTMLElement;
       } else {
         this.el = document.createElement(tag);

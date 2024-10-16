@@ -9,6 +9,7 @@ class CHTMLHRElement extends CHTMLElement<HTMLHRElement> {
     if (isServer()) {
       this.el = {
         tagName: 'hr',
+        dataset: {},
       } as HTMLHRElement;
     } else {
       this.el = document.createElement('hr');
