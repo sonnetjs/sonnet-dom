@@ -9,6 +9,7 @@ class CHTMLStyleElement extends CHTMLElement<HTMLStyleElement> {
     if (isServer()) {
       this.el = {
         tagName: 'style',
+        dataset: {},
       } as HTMLLinkElement;
     } else {
       this.el = document.createElement('style');

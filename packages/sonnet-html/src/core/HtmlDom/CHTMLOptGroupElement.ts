@@ -9,6 +9,7 @@ class CHTMLOptGroupElement extends CHTMLElement<HTMLOptGroupElement> {
     if (isServer()) {
       this.el = {
         tagName: 'optgroup',
+        dataset: {},
       } as HTMLOptGroupElement;
     } else {
       this.el = document.createElement('optgroup');

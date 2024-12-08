@@ -9,6 +9,7 @@ class CHTMLSpanElement extends CHTMLElement<HTMLSpanElement> {
     if (isServer()) {
       this.el = {
         tagName: tag,
+        dataset: {},
       } as HTMLSpanElement;
     } else {
       this.el = document.createElement(tag);

@@ -9,6 +9,7 @@ class CHTMLProgressElement extends CHTMLElement<HTMLProgressElement> {
     if (isServer()) {
       this.el = {
         tagName: 'progress',
+        dataset: {},
       } as HTMLProgressElement;
     } else {
       this.el = document.createElement('progress');

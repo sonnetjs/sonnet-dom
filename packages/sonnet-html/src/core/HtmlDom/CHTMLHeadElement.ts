@@ -9,6 +9,7 @@ class CHTMLHeadElement extends CHTMLElement<HTMLHeadElement> {
     if (isServer()) {
       this.el = {
         tagName: 'head',
+        dataset: {},
       } as HTMLHeadElement;
     } else {
       this.el = document.createElement('head');

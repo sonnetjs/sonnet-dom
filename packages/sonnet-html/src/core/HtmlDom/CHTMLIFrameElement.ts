@@ -9,6 +9,7 @@ class CHTMLIFrameElement extends CHTMLElement<HTMLIFrameElement> {
     if (isServer()) {
       this.el = {
         tagName: 'iframe',
+        dataset: {},
       } as HTMLIFrameElement;
     } else {
       this.el = document.createElement('iframe');

@@ -9,6 +9,7 @@ class CHTMLLabelElement extends CHTMLElement<HTMLLabelElement> {
     if (isServer()) {
       this.el = {
         tagName: 'label',
+        dataset: {},
       } as HTMLLabelElement;
     } else {
       this.el = document.createElement('label');

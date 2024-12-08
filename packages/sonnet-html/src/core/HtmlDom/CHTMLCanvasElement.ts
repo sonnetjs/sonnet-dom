@@ -9,6 +9,7 @@ class CHTMLCanvasElement extends CHTMLElement<HTMLCanvasElement> {
     if (isServer()) {
       this.el = {
         tagName: 'canvas',
+        dataset: {},
       } as HTMLCanvasElement;
     } else {
       this.el = document.createElement('canvas');

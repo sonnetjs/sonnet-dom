@@ -9,6 +9,7 @@ class CHTMLVideoElement extends CHTMLMediaElement<HTMLVideoElement> {
     if (isServer()) {
       this.el = {
         tagName: 'video',
+        dataset: {},
       } as HTMLVideoElement;
     } else {
       this.el = document.createElement('video');

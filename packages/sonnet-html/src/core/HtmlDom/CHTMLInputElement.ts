@@ -9,6 +9,7 @@ class CHTMLInputElement extends CHTMLElement<HTMLInputElement> {
     if (isServer()) {
       this.el = {
         tagName: 'input',
+        dataset: {},
       } as HTMLInputElement;
     } else {
       this.el = document.createElement('input');

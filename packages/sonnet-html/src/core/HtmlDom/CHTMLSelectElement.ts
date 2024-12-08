@@ -9,6 +9,7 @@ class CHTMLSelectElement extends CHTMLElement<HTMLSelectElement> {
     if (isServer()) {
       this.el = {
         tagName: 'select',
+        dataset: {},
       } as HTMLSelectElement;
     } else {
       this.el = document.createElement('select');

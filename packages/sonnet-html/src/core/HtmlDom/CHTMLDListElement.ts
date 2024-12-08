@@ -9,6 +9,7 @@ class CHTMLDListElement extends CHTMLElement<HTMLDListElement> {
     if (isServer()) {
       this.el = {
         tagName: 'dl',
+        dataset: {},
       } as HTMLDListElement;
     } else {
       this.el = document.createElement('dl');

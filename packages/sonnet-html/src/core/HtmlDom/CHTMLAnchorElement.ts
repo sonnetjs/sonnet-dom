@@ -9,6 +9,7 @@ class CHTMLAnchorElement extends CHTMLElement<HTMLAnchorElement> {
     if (isServer()) {
       this.el = {
         tagName: 'a',
+        dataset: {},
       } as HTMLAnchorElement;
     } else {
       this.el = document.createElement('a');

@@ -9,6 +9,7 @@ class CHTMLParagraphElement extends CHTMLElement<HTMLParagraphElement> {
     if (isServer()) {
       this.el = {
         tagName: 'p',
+        dataset: {},
       } as HTMLParagraphElement;
     } else {
       this.el = document.createElement('p');

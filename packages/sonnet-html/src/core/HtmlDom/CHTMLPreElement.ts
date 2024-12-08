@@ -9,6 +9,7 @@ class CHTMLPreElement extends CHTMLElement<HTMLPreElement> {
     if (isServer()) {
       this.el = {
         tagName: 'pre',
+        dataset: {},
       } as HTMLPreElement;
     } else {
       this.el = document.createElement('pre');

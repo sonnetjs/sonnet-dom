@@ -9,6 +9,7 @@ class CHTMLMetaElement extends CHTMLElement<HTMLMetaElement> {
     if (isServer()) {
       this.el = {
         tagName: 'meta',
+        dataset: {},
       } as HTMLMetaElement;
     } else {
       this.el = document.createElement('meta');

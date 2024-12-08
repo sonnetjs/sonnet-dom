@@ -9,6 +9,7 @@ class CHTMLFormElement extends CHTMLElement<HTMLFormElement> {
     if (isServer()) {
       this.el = {
         tagName: 'form',
+        dataset: {},
       } as HTMLFormElement;
     } else {
       this.el = document.createElement('form');

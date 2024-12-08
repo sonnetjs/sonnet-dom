@@ -9,6 +9,7 @@ class CHTMLDialogElement extends CHTMLElement<HTMLDialogElement> {
     if (isServer()) {
       this.el = {
         tagName: 'dialog',
+        dataset: {},
       } as HTMLDialogElement;
     } else {
       this.el = document.createElement('dialog');

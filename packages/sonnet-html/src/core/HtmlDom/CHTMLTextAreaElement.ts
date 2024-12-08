@@ -9,6 +9,7 @@ class CHTMLTextAreaElement extends CHTMLElement<HTMLTextAreaElement> {
     if (isServer()) {
       this.el = {
         tagName: 'textarea',
+        dataset: {},
       } as HTMLTextAreaElement;
     } else {
       this.el = document.createElement('textarea');

@@ -9,6 +9,7 @@ class CHTMLLIElement extends CHTMLElement<HTMLLIElement> {
     if (isServer()) {
       this.el = {
         tagName: 'li',
+        dataset: {},
       } as HTMLLIElement;
     } else {
       this.el = document.createElement('li');

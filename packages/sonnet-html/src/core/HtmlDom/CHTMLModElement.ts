@@ -9,6 +9,7 @@ class CHTMLModElement extends CHTMLElement<HTMLModElement> {
     if (isServer()) {
       this.el = {
         tagName: tag,
+        dataset: {},
       } as HTMLModElement;
     } else {
       this.el = document.createElement(tag);

@@ -9,6 +9,7 @@ class CHTMLPictureElement extends CHTMLElement<HTMLPictureElement> {
     if (isServer()) {
       this.el = {
         tagName: 'picture',
+        dataset: {},
       } as HTMLPictureElement;
     } else {
       this.el = document.createElement('picture');

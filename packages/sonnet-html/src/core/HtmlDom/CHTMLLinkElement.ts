@@ -9,6 +9,7 @@ class CHTMLLinkElement extends CHTMLElement<HTMLLinkElement> {
     if (isServer()) {
       this.el = {
         tagName: 'link',
+        dataset: {},
       } as HTMLLinkElement;
     } else {
       this.el = document.createElement('link');

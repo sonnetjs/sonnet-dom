@@ -9,6 +9,7 @@ class CHTMLBaseElement extends CHTMLElement<HTMLBaseElement> {
     if (isServer()) {
       this.el = {
         tagName: 'base',
+        dataset: {},
       } as HTMLBaseElement;
     } else {
       this.el = document.createElement('base');

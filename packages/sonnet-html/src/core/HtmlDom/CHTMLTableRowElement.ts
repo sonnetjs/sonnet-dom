@@ -9,6 +9,7 @@ class CHTMLTableRowElement extends CHTMLElement<HTMLTableRowElement> {
     if (isServer()) {
       this.el = {
         tagName: 'tr',
+        dataset: {},
       } as HTMLTableRowElement;
     } else {
       this.el = document.createElement('tr');

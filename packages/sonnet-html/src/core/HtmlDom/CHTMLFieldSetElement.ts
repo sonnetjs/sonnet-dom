@@ -9,6 +9,7 @@ class CHTMLFieldSetElement extends CHTMLElement<HTMLFieldSetElement> {
     if (isServer()) {
       this.el = {
         tagName: 'fieldset',
+        dataset: {},
       } as HTMLFieldSetElement;
     } else {
       this.el = document.createElement('fieldset');

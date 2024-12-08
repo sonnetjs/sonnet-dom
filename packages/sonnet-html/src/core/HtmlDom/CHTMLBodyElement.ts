@@ -9,6 +9,7 @@ class CHTMLBodyElement extends CHTMLElement<HTMLBodyElement> {
     if (isServer()) {
       this.el = {
         tagName: 'body',
+        dataset: {},
       } as HTMLBodyElement;
     } else {
       this.el = document.createElement('body');
